@@ -28,7 +28,7 @@ class App extends Component {
         fetch("https://vpce-0bd02e6e0e09e7544-4e9yt2ud-us-east-1d.execute-api.us-east-1.vpce.amazonaws.com/v1/random/", {
             method: 'GET',
             headers: {
-            'x-api-key': '7xggh6vvja',
+            'x-apigw-api-id': '7xggh6vvja',
             'Content-Type': 'application/json'
           }
         })
