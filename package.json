@@ -9,6 +9,7 @@
     "@aws-amplify/ui": "^2.0.2",
     "aws-amplify": "^3.0.17",
     "aws-amplify-react": "^4.1.16",
+    "crypto-js": "^4.0.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.5"
@@ -27,5 +28,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@types/crypto-js": "^3.1.47"
+  }
 }

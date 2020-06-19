@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Recipes from './components/recipes';
+import Amplify, {Auth} from 'aws-amplify';
 
 
 function refreshPage() {
@@ -7,8 +8,6 @@ function refreshPage() {
 }
 
 class App extends Component {
-    
-  
 
     render() {
         return (
@@ -23,13 +22,9 @@ class App extends Component {
         recipes: []
     };
 
-
     componentDidMount() {
-        fetch("https://7xggh6vvja.execute-api.us-east-1.amazonaws.com/v1/random", {
-            method: 'GET',
-            headers: {
-            'x-apigw-api-id': '7xggh6vvja'
-          }
+        fetch("https://ebbhyfc5aj.execute-api.us-east-1.amazonaws.com/v1/random", {
+            method: 'GET'
         })
             .then(res => res.json())
             .then((data) => {
@@ -38,11 +33,6 @@ class App extends Component {
             .catch(console.log)
     }
 
-
-
-
 }
-
-
 
 export default App;
