@@ -23,7 +23,8 @@ class App extends Component {
 
     componentDidMount() {
         fetch("https://ebbhyfc5aj.execute-api.us-east-1.amazonaws.com/v1/random", {
-            method: 'GET'
+            method: 'GET',
+            mode: 'no-cors'
         })
             .then(res => res.json())
             .then((data) => {
