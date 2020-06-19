@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Recipes from './components/recipes';
-import Amplify, {Auth} from 'aws-amplify';
 
 
 function refreshPage() {
