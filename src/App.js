@@ -22,13 +22,15 @@ class App extends Component {
     };
 
     componentDidMount() {
-        fetch("https://ebbhyfc5aj.execute-api.us-east-1.amazonaws.com/v1/random", {
+        fetch('https://ebbhyfc5aj.execute-api.us-east-1.amazonaws.com/v1/random', {
             method: 'GET',
-            mode: 'no-cors'
+            headers: {
+                'Content-Type':'application/json'
+            }
         })
             .then(res => res.json())
             .then((data) => {
-                this.setState({ recipes: data["drinks"] })
+                this.setState({ recipes: data['drinks'] })
             })
             .catch(console.log)
     }
@@ -36,3 +38,4 @@ class App extends Component {
 }
 
 export default App;
+
