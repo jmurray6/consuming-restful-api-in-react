@@ -25,11 +25,10 @@ class App extends Component {
 
 
     componentDidMount() {
-        fetch("https://vpce-0bd02e6e0e09e7544-4e9yt2ud-us-east-1d.execute-api.us-east-1.vpce.amazonaws.com/v1/random/", {
+        fetch("https://7xggh6vvja.execute-api.us-east-1.amazonaws.com/v1/random", {
             method: 'GET',
             headers: {
-            'x-apigw-api-id': '7xggh6vvja',
-            'Content-Type': 'application/json'
+            'x-apigw-api-id': '7xggh6vvja'
           }
         })
             .then(res => res.json())
