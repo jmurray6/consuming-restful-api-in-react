@@ -22,7 +22,7 @@ class App extends Component {
     };
 
     componentDidMount() {
-        fetch('https://ebbhyfc5aj.execute-api.us-east-1.amazonaws.com/v1/random', {
+        fetch('https://ebbhyfc5aj.execute-api.us-east-1.amazonaws.com/v1/open', {
             method: 'GET',
             headers: {
                 'Content-Type':'application/json'
